@@ -1,0 +1,223 @@
+@charset "UTF-8";
+html, body, h1, h2, h3, h4, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: YakuHanJP_Narrow, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button, input, select, textarea {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+img {
+  line-height: 1;
+  font-size: 0;
+  vertical-align: top;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+.contents__wrapper {
+  max-width: 1080px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contents__wrapper main {
+  background: #d2ecfa;
+  text-align: center;
+}
+
+.contents__wrapper .detail {
+  position: relative;
+  text-align: center;
+}
+
+.contents__wrapper .detail .detail-inner {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.contents__wrapper .detail .detail-inner .btn {
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  margin: 0 auto;
+  margin-left: -27.2%;
+  box-shadow: 0 3.3px 0 rgba(0, 0, 0, 0.75);
+  border-radius: 17px;
+  overflow: hidden;
+  width: 50%;
+  background: #00c238;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #00c238 35%, #00960c 93%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c238', endColorstr='#00960c',GradientType=0 );
+  /* IE6-9 */
+  animation: btn_scale 3.5s ease-in-out infinite;
+}
+
+.contents__wrapper .detail .detail-inner .btn a {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin: 0.25em;
+  overflow: hidden;
+}
+
+.contents__wrapper .detail .detail-inner .btn a .bg {
+  height: 3.95em;
+}
+
+.contents__wrapper .detail .detail-inner .btn a .bg:before {
+  content: "";
+  background: url(../../img/top_cp_btn_shine.svg) 0 0 no-repeat;
+  background-size: auto 100%;
+  height: 100%;
+  width: 37%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -12em;
+  margin: 0;
+  transform: translateX(0);
+  animation: btn_shine 3.5s ease-in-out infinite;
+}
+
+.contents__wrapper .detail .detail-inner .btn a .cont {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.contents__wrapper .detail .detail-inner .btn a .cont img {
+  width: 50%;
+  height: auto;
+}
+
+.contents__wrapper .detail .detail-inner .btn a:hover {
+  opacity: 0.9;
+}
+
+.contents__wrapper .detail .detail-inner p img {
+  margin-right: 15px;
+  width: 82.4%;
+  height: auto;
+}
+
+footer img {
+  width: 50%;
+  margin: 20px 0;
+}
+
+@keyframes btn_shine {
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(450%);
+  }
+}
+
+@keyframes btn_scale {
+  82% {
+    transform: scale(1);
+  }
+  89% {
+    transform: scale(1.01);
+  }
+  97% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 786px) {
+  @keyframes btn_shine {
+    80% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(200%);
+    }
+  }
+}
+
+.sp-none {
+  display: none;
+}
+
+@media (max-width: 785px) {
+  .header {
+    margin-top: 3%;
+  }
+  .sp-none {
+    display: block;
+  }
+  .contents__wrapper .detail .detail-inner .btn {
+    position: absolute;
+    left: 12%;
+    bottom: 9%;
+    margin-left: 0;
+    width: 76%;
+    height: 7%;
+  }
+  .contents__wrapper .detail .detail-inner .btn a .bg:before {
+    left: -18em;
+    width: 75%;
+  }
+  .contents__wrapper .detail .detail-inner .btn a .cont img {
+    width: 70%;
+    height: auto;
+  }
+  .contents__wrapper .detail .detail-inner .btn a {
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
